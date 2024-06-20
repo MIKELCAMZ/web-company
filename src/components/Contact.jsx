@@ -1,6 +1,6 @@
 import '../styles/Contact.css'
 
-// import parse from 'react-html-parser'
+import parse from 'react-html-parser'
 // import parse from 'html-react-parser'
 // import parseImports from 'parse-imports'
 
@@ -17,7 +17,7 @@ function Contact(props) {
                     {
                       return (
                         <div className="footer-section">
-                        {(item.content)}
+                        {parse(item.content)}
                     </div>
                       )
                     }
